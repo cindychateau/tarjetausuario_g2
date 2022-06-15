@@ -17,8 +17,8 @@
             <img src="icons/user-circle.png" alt="imagen avatar" class="avatar" />
         </div>
         <div class="card-body">
-            <h1>Juana de Arco</h1>
-            <h3>
+            <h1 onclick="cambiar_titulo(this)">Juana de Arco</h1> <!-- this la etiqueta completa h1 -->
+            <h3 class="claseh3">
                 <img src="icons/map-marker.png" alt="pin" class="icon" />
                 México
             </h3>
@@ -27,12 +27,29 @@
             </p>
             <p>
                 <a href="#">
-                    <img src="icons/gear.png" alt="engrane" class="icon" />
+                    <img onclick="cambia_img(this)" src="icons/gear.png" alt="engrane" class="icon" />
                     editar perfil
                 </a>
             </p>
+
+            <div id="p1">Persona 1</div>
+            <div id="p2">Persona 2</div>
+
+            <span id="numero">0</span>
+            <button ondblclick="cambiar_h1()">Cambiar texto h1</button>
+            <button onclick="cambiar_h3()">Cambiar H3</button>
+            <button onclick="incrementa()">Incrementa Número</button>
+            <button onmouseover="over(this)" onmouseout="out(this)">Probando Mouse Over</button>
+            <button onmouseover="over(this)" onmouseout="out(this)">Otro boton</button>
+            <button id="btn" class="btn-amarillo" onclick="cambiar_clase()" >Cambiar Clase</button>
+            <button onclick="cambiar_imgh3()">Cambiar Imagen dentro de H3</button>
+            
+            <button onclick="eliminar('#p1')">Eliminar Elemento1</button>
+            <button onclick="eliminar('#p2')">Eliminar Elemento2</button>
+
+
         </div>
     </div>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
